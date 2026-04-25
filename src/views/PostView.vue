@@ -44,8 +44,9 @@ const loading = ref(true)
 
 onMounted(async () => {
   const slug = route.params.slug as string
+  const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '')
   try {
-    const res = await fetch(`/api/v1/posts/${slug}.json`)
+    const res = await fetch(`${baseUrl}/api/v1/posts/${slug}.json`)
     if (!res.ok) throw new Error('Not found')
     post.value = await res.json()
   } catch (e) {

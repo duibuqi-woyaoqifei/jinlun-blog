@@ -13,7 +13,8 @@ export function useData<T>(endpoint: string) {
   const error = ref<string | null>(null)
 
   onMounted(async () => {
-    const url = `/api/v1/${endpoint}.json`
+    const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '')
+    const url = `${baseUrl}/api/v1/${endpoint}.json`
 
     // 命中缓存则直接返回
     if (cache.has(url)) {
