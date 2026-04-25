@@ -1,0 +1,22 @@
+[
+  {
+    "id": "linear-algebra",
+    "name": "线性代数 (Linear Algebra)",
+    "short_name": "线性代数",
+    "icon": "LA",
+    "description": "零基础学线代，带你用全新视角解读线性代数。",
+    "short_desc": "从基础到进阶的代数之美",
+    "tags": ["数学", "抽象思维"],
+    "link": "/docs/linear-algebra"
+  },
+  {
+    "id": "pv-system",
+    "name": "光伏系统 (PV System)",
+    "short_name": "光伏系统",
+    "icon": "☀️",
+    "description": "关于光伏发电系统设计、组件特性及能量转换效率的研究笔记。",
+    "short_desc": "清洁能源的技术实践",
+    "tags": ["能源", "系统设计", "工程"],
+    "link": "/docs/pv-system"
+  }
+]
