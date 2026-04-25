@@ -17,11 +17,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22 # 升级到最新 LTS/Stable 版本
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci # 使用 ci 确保完全一致的依赖环境
 
       - name: Build
         run: npm run build
