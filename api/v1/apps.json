@@ -21,6 +21,6 @@
     "features": ["高效解压", "批量处理", "带密码压缩/解压"],
     "link": "#",
     "platform": "Android",
-    "version": "1.5.4"
+    "version": "1.0.0"
   }
 ]
