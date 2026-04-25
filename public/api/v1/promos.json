@@ -1,26 +1,32 @@
 {
-  "version": "1.0.0",
-  "updated_at": "2026-04-25T15:40:00Z",
+  "version": "1.1.0",
+  "updated_at": "2026-04-25T18:12:00Z",
   "ads": [
     {
       "id": "ad_001",
       "type": "banner",
       "title": "高质电子书，就在 RBook",
       "image_url": "/images/promo/rbook_banner.webp",
+      "action_type": "url",
       "action_url": "https://github.com/jinlun/rbook"
     }
   ],
   "affiliates": [
     {
-      "id": "aff_001",
-      "name": "极客时间课程",
-      "description": "深入掌握 Go 语言开发",
-      "link": "https://time.geekbang.org/column/intro/100068401",
-      "promo_code": "LIOR666"
+      "id": "tb_001",
+      "name": "乐事薯片经典袋装38g40g薯片土豆片吃货追剧解馋膨化小吃休闲零食【包邮】",
+      "description": "经典口味，追剧必备零食",
+      "image": "https://img.alicdn.com/imgextra/i4/2210531512733/O1CN01rDtZIM1W3lZ7rPDqJ_!!2210531512733.jpg_q50.jpg_.webp",
+      "price": "11.19",
+      "original_price": "12.61",
+      "action_type": "taobao",
+      "taobao_token": "1覆👋ZHI5$7Ija5jybdqN$:// MU5183,打開/",
+      "taobao_url": "https://m.tb.cn/h.itgPFNR",
+      "tag": "限时优惠"
     }
   ],
   "config": {
     "show_ads": true,
-    "min_version": "1.2.0"
+    "min_version": "1.0.0"
   }
 }
