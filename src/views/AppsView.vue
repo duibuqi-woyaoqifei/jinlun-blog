@@ -7,7 +7,7 @@
     <div class="apps-container" v-if="apps">
       <section v-for="app in apps" :key="app.name" :id="app.id" class="app-showcase">
         <div class="app-image">
-          <img :src="app.icon" :alt="app.name" class="app-showcase-img" />
+          <img :src="assetUrl(app.icon)" :alt="app.name" class="app-showcase-img" />
         </div>
         <div class="app-info">
           <div class="app-badge">{{ app.category }}</div>
@@ -33,6 +33,7 @@
 
 <script setup lang="ts">
 import { useData } from '../composables/useData'
+import { assetUrl } from '../composables/useAsset'
 
 const { data: apps, loading } = useData<any[]>('apps')
 </script>

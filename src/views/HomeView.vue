@@ -31,7 +31,7 @@
       <h2 class="section-title">精选作品</h2>
       <div class="app-grid">
         <div v-for="app in apps" :key="app.name" class="app-card">
-          <img :src="app.icon" :alt="app.name" class="app-icon-img" />
+          <img :src="assetUrl(app.icon)" :alt="app.name" class="app-icon-img" />
           <h3>{{ app.name }}</h3>
           <p>{{ app.short_desc }}</p>
           <router-link :to="'/apps#' + app.id" class="learn-more">了解更多 →</router-link>
@@ -44,6 +44,7 @@
 
 <script setup lang="ts">
 import { useData } from '../composables/useData'
+import { assetUrl } from '../composables/useAsset'
 
 const { data: apps } = useData<any[]>('apps')
 const { data: docs } = useData<any[]>('docs')
