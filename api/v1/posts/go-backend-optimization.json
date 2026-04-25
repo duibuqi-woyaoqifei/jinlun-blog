@@ -1,0 +1,45 @@
+{
+  "title": "针对移动端 App 优化 Go 后端",
+  "slug": "go-backend-optimization",
+  "date": "2026-04-20",
+  "category": "后端",
+  "author": "Lior",
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "随着移动互联网的发展，后端服务需要面对越来越多来自移动设备的请求。Go 语言凭借其出色的并发性能和极低的内存占用，成为了构建高性能移动后端的理想选择。"
+    },
+    {
+      "type": "heading",
+      "text": "移动端的特殊需求"
+    },
+    {
+      "type": "paragraph",
+      "text": "与 Web 端不同，移动端对网络延迟更加敏感，用户对 App 的响应速度有更高的期望。同时，移动网络的不稳定性要求后端 API 具备更好的容错能力和更小的数据传输量。"
+    },
+    {
+      "type": "heading",
+      "text": "JSON 响应体积优化"
+    },
+    {
+      "type": "paragraph",
+      "text": "我采用了精简 JSON 字段名、移除空值字段、使用静态 JSON 文件代替动态 API 等策略，将平均响应体积减少了约 60%。对于不经常变化的数据，直接使用 GitHub Pages 托管的 JSON 文件可以显著降低服务器成本。"
+    },
+    {
+      "type": "heading",
+      "text": "无服务器架构"
+    },
+    {
+      "type": "paragraph",
+      "text": "对于个人开发者来说，维护服务器既费时又费钱。我探索了一种混合方案：将只读数据以静态 JSON 托管在 GitHub Pages 上，将需要写入的数据（如用户反馈）通过 GitHub Issues API 提交。这样既保证了可用性，又完全免去了服务器运维。"
+    },
+    {
+      "type": "heading",
+      "text": "实践总结"
+    },
+    {
+      "type": "paragraph",
+      "text": "通过这套方案，我的 App 后端实现了零服务器成本运行，同时具备了全球 CDN 加速能力。对于中小规模的个人项目，这是一个非常值得推荐的技术路线。"
+    }
+  ]
+}

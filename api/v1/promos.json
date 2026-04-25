@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-04-25T15:40:00Z",
+  "ads": [
+    {
+      "id": "ad_001",
+      "type": "banner",
+      "title": "高质电子书，就在 RBook",
+      "image_url": "/images/promo/rbook_banner.webp",
+      "action_url": "https://github.com/jinlun/rbook"
+    }
+  ],
+  "affiliates": [
+    {
+      "id": "aff_001",
+      "name": "极客时间课程",
+      "description": "深入掌握 Go 语言开发",
+      "link": "https://time.geekbang.org/column/intro/100068401",
+      "promo_code": "LIOR666"
+    }
+  ],
+  "config": {
+    "show_ads": true,
+    "min_version": "1.2.0"
+  }
+}
