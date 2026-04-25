@@ -19,6 +19,9 @@
       </section>
     </div>
 
+    <div v-else-if="loading" class="loading-state">
+      <p>正在加载文档...</p>
+    </div>
   </div>
 </template>
 

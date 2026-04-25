@@ -4,7 +4,7 @@
       <h1>我的 <span class="gradient-text">专栏</span></h1>
     </header>
 
-    <div class="posts-list">
+    <div class="posts-list" v-if="posts">
       <article v-for="post in posts" :key="post.slug" class="post-card">
         <div class="post-meta">
           <span class="post-date">{{ post.date }}</span>
@@ -14,6 +14,10 @@
         <p class="post-excerpt">{{ post.excerpt }}</p>
         <router-link :to="'/columns/' + post.slug" class="read-more">阅读文章 →</router-link>
       </article>
+    </div>
+
+    <div v-else-if="loading" class="loading-state">
+      <p>正在加载专栏...</p>
     </div>
   </div>
 </template>

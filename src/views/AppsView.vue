@@ -4,7 +4,7 @@
       <h1>我的 <span class="gradient-text">应用程序</span></h1>
     </header>
 
-    <div class="apps-container">
+    <div class="apps-container" v-if="apps">
       <section v-for="app in apps" :key="app.name" :id="app.id" class="app-showcase">
         <div class="app-image">
           <img :src="app.icon" :alt="app.name" class="app-showcase-img" />
@@ -25,6 +25,9 @@
       </section>
     </div>
 
+    <div v-else-if="loading" class="loading-state">
+      <p>正在加载应用列表...</p>
+    </div>
   </div>
 </template>
 
