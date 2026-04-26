@@ -1,0 +1,20 @@
+name: Purge jsDelivr Cache
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'public/api/v1/**'
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge Cache for Apps JSON
+        run: |
+          curl -i -X GET "https://purge.jsdelivr.net/gh/duibuqi-woyaoqifei/jinlun-blog@main/public/api/v1/apps.json"
+          
+      - name: Purge Cache for Promos JSON
+        run: |
+          curl -i -X GET "https://purge.jsdelivr.net/gh/duibuqi-woyaoqifei/jinlun-blog@main/public/api/v1/promos.json"
