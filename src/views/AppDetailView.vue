@@ -33,12 +33,6 @@
             </ul>
           </section>
 
-          <section class="info-section" v-if="app.update_config">
-            <h2>更新日志</h2>
-            <div class="update-box">
-              <pre>{{ app.update_config.update_msg }}</pre>
-            </div>
-          </section>
         </div>
 
         <!-- 右侧：下载与奖励 -->
@@ -60,11 +54,9 @@
               <div class="btn-glow"></div>
             </button>
 
-            <div class="rules-section" v-if="app.share_rules">
-              <h3>奖励规则说明</h3>
-              <div class="rules-content">
-                {{ app.share_rules }}
-              </div>
+            <div class="password-tip">
+              <span class="tip-icon">🔐</span>
+              <span>温馨提示：云盘提取码为 <strong class="pwd">123</strong></span>
             </div>
           </div>
         </div>
@@ -332,11 +324,36 @@ watch(app, (newVal) => {
   border-radius: 8px;
 }
 
+.password-tip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.tip-icon {
+  font-size: 1.1rem;
+}
+
+.pwd {
+  color: var(--accent);
+  font-family: monospace;
+  font-size: 1.1rem;
+  margin-left: 0.2rem;
+}
+
 @media (max-width: 768px) {
   .detail-grid { grid-template-columns: 1fr; }
   .detail-header { flex-direction: column; text-align: center; }
   .detail-card { padding: 1.5rem; }
 }
+
 
 .loading-full {
   height: 60vh;
