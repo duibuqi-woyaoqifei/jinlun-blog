@@ -18,7 +18,7 @@
             <li v-for="feature in app.features" :key="feature">{{ feature }}</li>
           </ul>
           <div class="app-actions">
-            <a :href="app.link" class="btn btn-primary">下载</a>
+            <a :href="app.link" :id="'btn-download-' + app.id" class="btn btn-primary">下载</a>
             <span class="backend-badge">Android</span>
           </div>
         </div>
@@ -32,10 +32,46 @@
 </template>
 
 <script setup lang="ts">
+import { onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import { useData } from '../composables/useData'
 import { assetUrl } from '../composables/useAsset'
 
 const { data: apps, loading } = useData<any[]>('apps')
+const route = useRoute()
+
+// 声明友盟 UMLink 全局变量
+declare const UMLink: any;
+
+const initUMLink = () => {
+  if (typeof UMLink === 'undefined' || !apps.value) return
+
+  apps.value.forEach(app => {
+    if (app.umlink_id) {
+      UMLink.load({
+        id: app.umlink_id,
+        data: {
+          invite_code: route.query.invite_code || '',
+          from: 'blog_h5'
+        },
+        selector: `#btn-download-${app.id}`,
+        useClipboard: true, // 开启剪切板方案
+        onready: (ctx: any) => {
+          console.log(`UMLink ready for ${app.name}`, ctx)
+        }
+      })
+    }
+  })
+}
+
+onMounted(() => {
+  initUMLink()
+})
+
+// 当数据加载完成后再次初始化
+watch(apps, () => {
+  initUMLink()
+})
 </script>
 
 <style scoped>
