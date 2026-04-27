@@ -26,6 +26,11 @@ const router = createRouter({
       component: () => import('../views/AppsView.vue')
     },
     {
+      path: '/apps/:id',
+      name: 'app-detail',
+      component: () => import('../views/AppDetailView.vue')
+    },
+    {
       path: '/columns',
       name: 'columns',
       component: () => import('../views/BlogView.vue')
