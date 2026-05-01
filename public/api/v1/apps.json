@@ -21,7 +21,7 @@
     "features": ["高效解压", "批量处理", "带密码压缩/解压"],
     "link": "https://wwbtm.lanzouu.com/iKULx3o7vgsf",
     "platform": "Android",
-    "version": "1.0.5",
+    "version": "1.1.6",
     "umlink_id": "usr1q2o562l0b2f0",
     "share_title": "🔥 极速解压缩app，推荐给您！",
     "share_desc": "点击下方链接，立即下载体验吧！",
@@ -33,7 +33,7 @@
     "contact_qq": "827752284",
     "show_promos": false,
     "update_config": {
-      "latest_version": "1.0.5",
+      "latest_version": "1.1.6",
       "force_update": false,
       "update_msg": "1. 优化解压速度\n2. 增加激励奖励时长\n3. 修复已知问题"
     },
