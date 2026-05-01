@@ -14,14 +14,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Update apps.json
-        run: |
-          VERSION="${{ github.event.client_payload.version }}"
-          URL="${{ github.event.client_payload.url }}"
-          
-          # 精准修改 unzip-pro 的版本和链接，不改动任何其他字段
+          # 精准修改 unzip-pro 或 rbook 的版本和链接
           # 使用 jq 的 map 逻辑确保结构稳健
-          cat public/api/v1/apps.json | jq "map(if .id == \"unzip-pro\" then .version = \"$VERSION\" | .link = \"$URL\" | .update_config.latest_version = \"$VERSION\" else . end)" > apps_tmp.json
+          cat public/api/v1/apps.json | jq "map(
+            if .id == \"unzip-pro\" or .id == \"rbook\" then 
+              .version = \"$VERSION\" | 
+              .link = \"$URL\" | 
+              .update_config.latest_version = \"$VERSION\" 
+            else . end
+          )" > apps_tmp.json
           mv apps_tmp.json public/api/v1/apps.json
           
       - name: Commit and Push

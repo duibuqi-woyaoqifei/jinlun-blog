@@ -14,7 +14,12 @@
     ],
     "link": "#",
     "platform": "Android",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "update_config": {
+      "latest_version": "1.0.0",
+      "force_update": false,
+      "update_msg": "初始版本发布"
+    }
   },
   {
     "id": "unzip-pro",
@@ -44,7 +49,7 @@
     "update_config": {
       "latest_version": "1.1.7",
       "force_update": false,
-      "update_msg": "1. 优化解压速度\n2. 增加激励奖励时长\n3. 修复已知问题"
+      "update_msg": "1. 优化解压速度\n2. 修复已知问题"
     },
     "ad_config": {
       "splash_id": "100009029"

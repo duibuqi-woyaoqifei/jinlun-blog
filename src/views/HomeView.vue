@@ -3,7 +3,7 @@
     <section class="hero">
       <h1 class="hero-title">为 <span class="gradient-text">创新思维</span> 构建工具</h1>
       <p class="hero-subtitle">
-        我是 Lior，为你建立新世界。
+        Lior，为你建立新世界。
       </p>
       <div class="hero-actions">
         <router-link to="/apps" class="btn btn-primary">探索我的应用</router-link>

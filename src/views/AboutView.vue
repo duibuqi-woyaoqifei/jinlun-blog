@@ -32,13 +32,13 @@
     <section class="contact-section">
       <h2 class="section-title">保持联系</h2>
       <div class="contact-grid">
-        <a href="https://github.com/jinlun" target="_blank" class="contact-card">
+        <a href="https://github.com/duibuqi-woyaoqifei" target="_blank" class="contact-card">
           <div class="contact-icon github">
             <Github :size="32" />
           </div>
           <div class="contact-info">
             <h3>GitHub</h3>
-            <p>@jinlun</p>
+            <p>@duibuqi-woyaoqifei</p>
           </div>
         </a>
         <a href="mailto:827752284@qq.com" class="contact-card">
@@ -61,7 +61,7 @@ import { Github, Mail } from 'lucide-vue-next'
 
 const members = [
   {
-    avatar: 'https://www.github.com/jinlun.png',
+    avatar: 'https://www.github.com/duibuqi-woyaoqifei.png',
     name: 'Lior',
     title: '创始人 & 开发者',
     links: [
