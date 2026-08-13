@@ -12,7 +12,7 @@
       "书籍分类管理",
       "阅读进度自动保存"
     ],
-    "link": "#",
+    "link": "https://fastly.jsdelivr.net/gh/duibuqi-woyaoqifei/Rbook@release-bin/rbook-latest.apk",
     "platform": "Android",
     "version": "1.0.0",
     "update_config": {
