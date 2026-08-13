@@ -36,39 +36,10 @@
     "link": "https://fastly.jsdelivr.net/gh/duibuqi-woyaoqifei/unzip-file-2@release-bin/unzip-pro-latest.apk",
     "platform": "Android",
     "version": "1.1.7",
-    "umlink_id": "usr1q2o562l0b2f0",
-    "share_title": "🔥 极速解压缩app，推荐给您！",
-    "share_desc": "点击下方链接，立即下载体验吧！",
-    "share_rules": "【奖励规则】：\n1. 每成功邀请 1 位新用户安装并启动 App，您将获得 30 天 VIP 会员奖励；\n2. 推荐好友必须为首次安装该 App 的新设备，重复安装无效；\n3. 系统通过智能超链自动识别推荐关系；\n\n【温馨提示】：奖励发放可能会有一点点延迟，但一定会到账，请耐心等待。感谢您的支持！",
-    "invite_reward_mins": 43200,
-    "gift_code": "HAPPY2026",
-    "gift_reward_mins": 43200,
-    "notice": "新版本已发布，支持批量解压功能！",
-    "contact_qq": "827752284",
-    "show_promos": false,
     "update_config": {
       "latest_version": "1.1.7",
       "force_update": false,
       "update_msg": "1. 优化解压速度\n2. 修复已知问题"
-    },
-    "ad_config": {
-      "splash_id": "100009029"
-    },
-    "reward_tasks": [
-      {
-        "slot_id": "100009031",
-        "type": "REWARDED_VIDEO",
-        "title": "观看视频广告",
-        "desc": "观看一段完整视频，获得24小时会员时长",
-        "reward_mins": 1440
-      },
-      {
-        "slot_id": "100009033",
-        "type": "INTERSTITIAL",
-        "title": "浏览推荐页面",
-        "desc": "浏览合作伙伴页面几秒，获得1小时会员时长",
-        "reward_mins": 60
-      }
-    ]
+    }
   }
 ]
