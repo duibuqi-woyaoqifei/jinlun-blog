@@ -8,6 +8,9 @@
  *   → 生产: '/jinlun-blog/images/apps/icon.webp'
  */
 export function assetUrl(path: string): string {
+  // 容错：当 icon 等字段缺失（undefined / null / 空字符串）时，
+  // 不再调用 path.startsWith 抛异常导致整个页面渲染失败，而是返回空串。
+  if (!path) return ''
   const base = import.meta.env.BASE_URL.replace(/\/$/, '')
   // 避免双斜杠：如果 path 已经以 base 开头则直接返回
   if (path.startsWith(base)) return path

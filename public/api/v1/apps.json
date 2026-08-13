@@ -1,21 +1,45 @@
 [
   {
+    "id": "rbook",
     "name": "RBook",
-    "version": "2.1.0",
-    "description": "Premium E-Book Reader",
+    "icon": "/images/apps/Rbook/ic_launcher.webp",
+    "category": "阅读",
+    "description": "功能丰富的电子书阅读器，支持 EPUB、PDF、TXT 等格式。",
+    "short_desc": "优质电子书阅读器。",
     "features": [
-      "EPUB Support",
-      "Dark Mode",
-      "Sync"
-    ]
+      "舒适的阅读体验",
+      "字体大小和主题自定义",
+      "书籍分类管理",
+      "阅读进度自动保存"
+    ],
+    "link": "#",
+    "platform": "Android",
+    "version": "1.0.0",
+    "update_config": {
+      "latest_version": "1.0.0",
+      "force_update": false,
+      "update_msg": "初始版本发布"
+    }
   },
   {
-    "name": "Unzip Pro",
-    "version": "1.5.4",
-    "description": "Powerful Archive Manager",
+    "id": "unzip-pro",
+    "name": "解压专家",
+    "icon": "/images/apps/unzip-pro.webp",
+    "category": "工具",
+    "description": "一键解压，支持 zip、rar、7z、tar、gz 等格式。",
+    "short_desc": "精美的文件解压缩工具。",
     "features": [
-      "7z Support",
-      "AES-256 Encryption"
-    ]
+      "高效解压",
+      "批量处理",
+      "带密码压缩/解压"
+    ],
+    "link": "https://fastly.jsdelivr.net/gh/duibuqi-woyaoqifei/unzip-file-2@release-bin/unzip-pro-latest.apk",
+    "platform": "Android",
+    "version": "1.1.7",
+    "update_config": {
+      "latest_version": "1.1.7",
+      "force_update": false,
+      "update_msg": "1. 优化解压速度\n2. 修复已知问题"
+    }
   }
 ]
