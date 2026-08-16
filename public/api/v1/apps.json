@@ -14,9 +14,9 @@
     ],
     "link": "https://fastly.jsdelivr.net/gh/duibuqi-woyaoqifei/Rbook@release-bin/rbook-latest.apk",
     "platform": "Android",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "update_config": {
-      "latest_version": "1.0.4",
+      "latest_version": "1.0.5",
       "force_update": false,
       "update_msg": "初始版本发布"
     }
@@ -35,9 +35,9 @@
     ],
     "link": "https://fastly.jsdelivr.net/gh/duibuqi-woyaoqifei/Rbook@release-bin/rbook-latest.apk",
     "platform": "Android",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "update_config": {
-      "latest_version": "1.0.4",
+      "latest_version": "1.0.5",
       "force_update": false,
       "update_msg": "1. 优化解压速度\n2. 修复已知问题"
     }
